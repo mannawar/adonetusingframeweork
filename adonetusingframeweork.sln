@@ -5,7 +5,11 @@ VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "adonetusingframework", "adonetusingframeweork\adonetusingframework.csproj", "{6AF8E3EB-A697-458B-A53E-F9D70D451512}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Windowsformwithoutwebconfigweadd", "..\Windowsformwithoutwebconfigweadd\Windowsformwithoutwebconfigweadd.csproj", "{17DA8ED5-578A-47F9-AB94-762B238B2E7E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Windowsformwithoutwebconfigweadd", "..\Windowsformwithoutwebconfigweadd\Windowsformwithoutwebconfigweadd.csproj", "{17DA8ED5-578A-47F9-AB94-762B238B2E7E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormnetcoreversion", "..\WinFormnetcoreversion\WinFormnetcoreversion.csproj", "{579123F4-7523-41C0-99A8-82D5E571BD8A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "webappasonetusingoutputparamter", "..\webappasonetusingoutputparamter\webappasonetusingoutputparamter.csproj", "{9760F28C-9D9D-4C6D-8C55-91757D8AA891}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{17DA8ED5-578A-47F9-AB94-762B238B2E7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17DA8ED5-578A-47F9-AB94-762B238B2E7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17DA8ED5-578A-47F9-AB94-762B238B2E7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{579123F4-7523-41C0-99A8-82D5E571BD8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{579123F4-7523-41C0-99A8-82D5E571BD8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{579123F4-7523-41C0-99A8-82D5E571BD8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{579123F4-7523-41C0-99A8-82D5E571BD8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9760F28C-9D9D-4C6D-8C55-91757D8AA891}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9760F28C-9D9D-4C6D-8C55-91757D8AA891}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9760F28C-9D9D-4C6D-8C55-91757D8AA891}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9760F28C-9D9D-4C6D-8C55-91757D8AA891}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
