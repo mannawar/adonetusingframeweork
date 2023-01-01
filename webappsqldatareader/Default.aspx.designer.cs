@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace adonetusingframeweork
+namespace webappsqldatareader
 {
 
 
