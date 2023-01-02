@@ -53,6 +53,26 @@ namespace webappsqldatareader
                 "DisconnectedDataAccess",
                 "~/Disconnecteddataaccess.aspx"
             );
+            routes.MapPageRoute(
+                "StronglyUnTypedDataset",
+                "StronglyUnTypedDataset",
+                "~/Stronglyuntypeddataset.aspx"
+            );
+            routes.MapPageRoute(
+                "StronglyTypedDS",
+                "StronglyTypedDS",
+                "~/Stronglytypedds.aspx"
+            );
+            routes.MapPageRoute(
+                "SqlBulkcopy",
+                "SqlBulkcopy",
+                "~/Sqlbulkcopy.aspx"
+            );
+            routes.MapPageRoute(
+                "SqlTransactions",
+                "SqlTransactions",
+                "~/Sqltransactions.aspx"
+            );
         }
     }
 }

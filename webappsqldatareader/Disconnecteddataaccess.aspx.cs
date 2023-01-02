@@ -64,7 +64,7 @@ namespace webappsqldatareader
         protected void GridView1_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
             DataSet ds = (DataSet)Cache["DATASET"];
-            DataRow dr = ds.Tables["Students"].Rows.Find(e.Keys["ID"]);
+            ds.Tables["Students"].Rows.Find(e.Keys["ID"]).Delete();
             Cache.Insert("DATASET", ds, null, DateTime.Now.AddHours(24), System.Web.Caching.Cache.NoSlidingExpiration);
             GetDataFromCache();
         }
@@ -118,6 +118,48 @@ namespace webappsqldatareader
 
             lblStatus.Text = "Updated database";
 
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            DataSet ds = (DataSet)Cache["DATASET"];
+            //DataRow newDataRow = ds.Tables["Students"].NewRow();
+            //newDataRow["ID"] = 101;
+            ////ds.Tables["Students"].Rows.Add(newDataRow);
+
+            //foreach(DataRow dr in ds.Tables["Students"].Rows)
+            //{
+            //    if(dr.RowState == DataRowState.Deleted)
+            //    {
+            //        Response.Write(dr["ID", DataRowVersion.Original].ToString() + "-" + dr.RowState.ToString() + "<br />");
+            //    }
+            //    else
+            //    {
+            //        Response.Write(dr["ID"].ToString() + "-" + dr.RowState.ToString() + "<br />");
+            //    }
+
+            //}
+            //Response.Write(newDataRow.RowState.ToString());
+
+            //RejectChanges method
+            //if(ds.HasChanges())
+            //{
+            //    ds.RejectChanges();
+            //Cache.Insert("DATASET", ds, null, DateTime.Now.AddHours(24), System.Web.Caching.Cache.NoSlidingExpiration);
+            //GetDataFromCache();
+            //    lblStatus.Text = "Changes undone";
+            //    lblStatus.ForeColor = System.Drawing.Color.Green;
+            //}
+            //else
+            //{
+            //    lblStatus.Text = "Changes done";
+            //    lblStatus.ForeColor = System.Drawing.Color.Red;
+            //}
+
+            //AcceptChanges method
+            ds.AcceptChanges();
+            Cache.Insert("DATASET", ds, null, DateTime.Now.AddHours(24), System.Web.Caching.Cache.NoSlidingExpiration);
+            GetDataFromCache();
         }
     }
 }

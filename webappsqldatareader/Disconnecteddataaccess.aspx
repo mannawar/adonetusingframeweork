@@ -3,6 +3,8 @@
     <div style="font-family: Arial">
         <asp:Button ID="btnGetDataFromDB" runat="server" Text="Get Data from Database" 
             onclick="btnGetDataFromDB_Click" />
+        <asp:Button ID="Button1" runat="server" Text="Undo" 
+            onclick="Button1_Click" />
         <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False"            
             DataKeyNames="ID" onrowediting="GridView1_RowEditing" 
             onrowcancelingedit="GridView1_RowCancelingEdit" 
@@ -21,7 +23,8 @@
         </asp:GridView>
         <asp:Button ID="btnUpdateDatabaseTable" runat="server" 
             Text="Update Database Table" onclick="btnUpdateDatabaseTable_Click" />
-            <asp:Label ID="lblStatus" runat="server"></asp:Label>
+        <br />
+        <asp:Label ID="lblStatus" runat="server"></asp:Label>
     </div>
 
 </asp:Content>
